@@ -22,29 +22,29 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnSource = New System.Windows.Forms.Button()
+        Me.btnTarget = New System.Windows.Forms.Button()
         Me.lblSource = New System.Windows.Forms.Label()
         Me.lblTarget = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
-        'Button1
+        'btnSource
         '
-        Me.Button1.Location = New System.Drawing.Point(12, 27)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Source"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnSource.Location = New System.Drawing.Point(12, 27)
+        Me.btnSource.Name = "btnSource"
+        Me.btnSource.Size = New System.Drawing.Size(75, 23)
+        Me.btnSource.TabIndex = 0
+        Me.btnSource.Text = "Source"
+        Me.btnSource.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnTarget
         '
-        Me.Button2.Location = New System.Drawing.Point(12, 71)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Target"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnTarget.Location = New System.Drawing.Point(12, 71)
+        Me.btnTarget.Name = "btnTarget"
+        Me.btnTarget.Size = New System.Drawing.Size(75, 23)
+        Me.btnTarget.TabIndex = 1
+        Me.btnTarget.Text = "Target"
+        Me.btnTarget.UseVisualStyleBackColor = True
         '
         'lblSource
         '
@@ -73,8 +73,8 @@ Partial Class Form1
         Me.ClientSize = New System.Drawing.Size(579, 209)
         Me.Controls.Add(Me.lblTarget)
         Me.Controls.Add(Me.lblSource)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnTarget)
+        Me.Controls.Add(Me.btnSource)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
@@ -82,8 +82,8 @@ Partial Class Form1
 
     End Sub
 
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents btnSource As Button
+    Friend WithEvents btnTarget As Button
     Friend WithEvents lblSource As Label
     Friend WithEvents lblTarget As Label
 End Class
