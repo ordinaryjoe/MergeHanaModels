@@ -26,6 +26,7 @@ Partial Class Form1
         Me.btnTarget = New System.Windows.Forms.Button()
         Me.lblSource = New System.Windows.Forms.Label()
         Me.lblTarget = New System.Windows.Forms.Label()
+        Me.btnMerge = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnSource
@@ -66,11 +67,21 @@ Partial Class Form1
         Me.lblTarget.TabIndex = 3
         Me.lblTarget.Text = "TargetPath"
         '
+        'btnMerge
+        '
+        Me.btnMerge.Location = New System.Drawing.Point(12, 127)
+        Me.btnMerge.Name = "btnMerge"
+        Me.btnMerge.Size = New System.Drawing.Size(75, 23)
+        Me.btnMerge.TabIndex = 4
+        Me.btnMerge.Text = "Merge Files"
+        Me.btnMerge.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(579, 209)
+        Me.Controls.Add(Me.btnMerge)
         Me.Controls.Add(Me.lblTarget)
         Me.Controls.Add(Me.lblSource)
         Me.Controls.Add(Me.btnTarget)
@@ -86,4 +97,5 @@ Partial Class Form1
     Friend WithEvents btnTarget As Button
     Friend WithEvents lblSource As Label
     Friend WithEvents lblTarget As Label
+    Friend WithEvents btnMerge As Button
 End Class
