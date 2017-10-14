@@ -52,9 +52,9 @@ Partial Class Form1
         Me.lblSource.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblSource.Location = New System.Drawing.Point(115, 27)
         Me.lblSource.Name = "lblSource"
-        Me.lblSource.Size = New System.Drawing.Size(80, 16)
+        Me.lblSource.Size = New System.Drawing.Size(73, 16)
         Me.lblSource.TabIndex = 2
-        Me.lblSource.Text = "SourcePatha"
+        Me.lblSource.Text = "SourcePath"
         '
         'lblTarget
         '
