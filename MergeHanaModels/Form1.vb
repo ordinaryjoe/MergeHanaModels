@@ -6,7 +6,7 @@ Public Class Form1
         Dim strFilePath As String
 
         fd.Title = "Open File Dialog"
-        fd.InitialDirectory = "C:\"
+        'fd.InitialDirectory = "C:\"
         fd.Filter = "All files (*.*)|*.*|All files (*.*)|*.*"
         fd.FilterIndex = 2
         'fd.RestoreDirectory = True
@@ -19,16 +19,11 @@ Public Class Form1
     End Function
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnSource.Click
-        'Dim inputString As String = "This is more text right here."
-        'My.Computer.FileSystem.WriteAllText(
-        '"C:\Temp\filetest//testfile.txt", inputString, True)
-
         lblSource.Text = GetFile()
 
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnTarget.Click
-
         lblTarget.Text = GetFile()
 
     End Sub
@@ -56,5 +51,7 @@ Public Class Form1
 
         ' Save the "to" document with it's newly appended nodes.
         xdTo.Save("C:\temp\XmlTest.xml")
+        MessageBox.Show("Done", "SuperCool App")
+
     End Sub
 End Class
